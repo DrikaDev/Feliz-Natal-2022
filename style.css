@@ -67,6 +67,10 @@ body{
     }
     
     #arrow{
-        margin-top: 26rem;
+        margin-top: 29rem;
+    }
+
+    #about p{
+        width: 80%;
     }
 }
