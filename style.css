@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Delius Swash Caps', cursive;
+}
+
+body{
+    background-image: url(./papai-noel.gif);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 60%;
+    background-color: black;
+    width: 100%;
+    height: 45vh;
+}
+
+#arrow{
+    width: 100%;
+    height: 8vh;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: aliceblue;
+    margin-top: 15rem;
+}
+
+#animation{
+   transition: 300ms;
+   animation-name: piscar;
+   animation-duration: 1s;
+   animation-timing-function: steps(3, start) ;
+   animation-delay: 1s;
+   animation-iteration-count: infinite; 
+}
+
+@keyframes piscar{
+    to{
+        visibility: hidden;
+    }
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active{
+    display: block !important;
+}
+
+#about p{
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+    
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+
+@media screen and (min-width: 780px) {
+    body{
+        background-position: top;
+        background-size: 30%;
+        border: 1px solid white;
+        height: 100vh;
+    }
+    
+    #arrow{
+        margin-top: 26rem;
+    }
+}
